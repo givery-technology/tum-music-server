@@ -58,11 +58,11 @@ module.exports.connections = {
   ***************************************************************************/
   devMongodbServer: {
     adapter: 'sails-mongo',
-    host: '127.0.0.1',
-    port: 27017,
-    // user: 'username',
-    // password: 'password',
-    database: 'conceptum_dev'
+    host: 'ds031661.mongolab.com',
+    port: 31661,
+     user: 'root',
+     password: 'root',
+    database: 'heroku_app36701107'
   },
 
   /***************************************************************************
