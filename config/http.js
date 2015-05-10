@@ -35,11 +35,11 @@ module.exports.http = {
     passportInit: passport.initialize(),
     passportSession: passport.session(),
 
-    allowCors: function (req, res, next) {
-      res.header('Access-Control-Allow-Origin', '*');
-      res.header('Access-Control-Allow-Credentials', true);
-      return next();
-    },
+    //allowCors: function (req, res, next) {
+    //  res.header('Access-Control-Allow-Origin', '*');
+    //  res.header('Access-Control-Allow-Credentials', true);
+    //  return next();
+    //},
 
     order: [
       'startRequestTimer',
@@ -47,7 +47,7 @@ module.exports.http = {
       'session',
       'passportInit',
       'passportSession',
-      'allowCors',
+      //'allowCors',
       'myRequestLogger',
       'bodyParser',
       'handleBodyParserError',
